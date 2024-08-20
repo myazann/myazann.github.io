@@ -2,10 +2,29 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
 }
 
 .profile-pic {
@@ -17,20 +36,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 h1 {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 nav ul {
@@ -68,4 +75,18 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#contact {
+    text-align: left;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
 }
