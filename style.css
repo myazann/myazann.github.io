@@ -98,7 +98,7 @@ a:hover {
 .social-links {
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 15px;
 }
 
