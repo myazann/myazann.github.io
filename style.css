@@ -151,3 +151,29 @@ a:hover {
         margin: 5px 10px;
     }
 }
+
+.education-item, .experience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.education-content, .experience-content {
+    flex: 1;
+}
