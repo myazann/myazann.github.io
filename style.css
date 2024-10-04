@@ -105,7 +105,7 @@ a:hover {
 }
 
 .social-links a {
-    font-size: 0;
+    font-size: 24 px;
     transition: opacity 0.3s ease;
 }
 
