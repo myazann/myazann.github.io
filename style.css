@@ -105,12 +105,21 @@ a:hover {
 }
 
 .social-links a {
-    font-size: 24 px;
+    display: inline-block;
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
     transition: opacity 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #0066cc;
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.social-links a:hover img {
+    opacity: 0.8;
 }
 
 .publication, .education-item, .experience-item {
