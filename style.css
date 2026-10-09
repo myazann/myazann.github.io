@@ -666,22 +666,9 @@ a { color: inherit; }
   max-width: var(--measure);
 }
 .studies li {
-  display: grid;
-  grid-template-columns: 5.5rem 1fr;
-  gap: 1rem;
   color: var(--ink-2);
   padding-left: 0.9rem;
   border-left: 1px solid var(--rule-strong);
-}
-.study-n {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--accent);
-  padding-top: 0.2rem;
-  white-space: nowrap;
-}
-@media (max-width: 479px) {
-  .studies li { grid-template-columns: 1fr; gap: 0.15rem; }
 }
 
 /* ---------- Skills ---------- */
