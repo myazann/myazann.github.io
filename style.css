@@ -665,10 +665,19 @@ a { color: inherit; }
   gap: 0.75rem;
   max-width: var(--measure);
 }
+.studies { counter-reset: study; }
 .studies li {
+  counter-increment: study;
+  display: grid;
+  grid-template-columns: 1.75rem 1fr;
   color: var(--ink-2);
-  padding-left: 0.9rem;
-  border-left: 1px solid var(--rule-strong);
+}
+.studies li::before {
+  content: counter(study) ".";
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+  padding-top: 0.2rem;
 }
 
 /* ---------- Skills ---------- */
